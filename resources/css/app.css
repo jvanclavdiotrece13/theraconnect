@@ -1,0 +1,90 @@
+:root {
+    --thera-primary: #d97757;
+    --thera-bg: #fdfaf7;
+    --thera-sidebar: #ffffff;
+}
+body { 
+    background-color: var(--thera-bg); 
+    font-family: 'Inter', sans-serif; 
+}
+.sidebar { 
+    width: 250px; 
+    height: 100vh; 
+    background: var(--thera-sidebar); 
+    border-right: 1px solid #eee; 
+    position: fixed; 
+}
+.main-content { 
+    margin-left: 250px; 
+    padding: 30px; 
+}
+.nav-link { 
+    color: #888; 
+    padding: 12px 20px; 
+    border-radius: 10px; 
+    margin: 5px 15px; 
+    display: flex; 
+    align-items: center; 
+}
+.nav-link.active { 
+    background: #fef2f0; 
+    color: var(--thera-primary); 
+    font-weight: bold; 
+}
+.stat-card { 
+    background: white; 
+    border-radius: 20px; 
+    border: none; 
+    padding: 20px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02); 
+}
+.btn-add { 
+    background-color: var(--thera-primary); 
+    border: none; 
+    border-radius: 12px; 
+    padding: 12px 24px; 
+    color: white; 
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.up-next-card { 
+    background: linear-gradient(135deg, #e49277, #d97757); 
+    border-radius: 20px; 
+    color: white; 
+    padding: 25px; 
+}
+.schedule-row { 
+    background: white; 
+    border-radius: 15px; 
+    margin-bottom: 10px; 
+    transition: 0.2s; 
+}
+.schedule-row:hover { 
+    transform: translateX(5px); 
+}
+.status-badge { 
+    border-radius: 20px; 
+    padding: 5px 15px; 
+    font-size: 0.8rem; 
+}
+/* Form and Button Alignment Improvements */
+.form-control {
+    padding: 12px 20px !important;
+    border-radius: 15px !important;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+button, [type="button"], [type="submit"], [type="reset"] {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
